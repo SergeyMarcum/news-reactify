@@ -4,9 +4,10 @@ import styles from "./styles.module.css";
 interface Props {
   children: React.ReactElement;
   step?: number; // Optional prop to define scroll step size. Default is 150px.
+  isDark: boolean;
 }
 
-const Slider = ({ children, step = 150 }: Props) => {
+const Slider = ({ children, step = 150, isDark }: Props) => {
   const sliderRef = useRef<HTMLElement | null>(null);
 
   const scrollLeft = () => {
@@ -22,7 +23,7 @@ const Slider = ({ children, step = 150 }: Props) => {
   };
 
   return (
-    <div className={styles.slider}>
+    <div className={`${styles.slider}  ${isDark ? styles.dark : styles.light}`}>
       <button onClick={scrollLeft} className={styles.arrow}>
         {"<"}
       </button>

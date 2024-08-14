@@ -5,6 +5,13 @@
   gap: 12px;
 }
 
+.dark {
+  background-color: #23272f;
+}
+.light {
+  background-color: #fff;
+}
+
 .input {
   width: 100%;
   padding: 10px;
