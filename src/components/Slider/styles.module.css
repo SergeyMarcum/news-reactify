@@ -11,3 +11,13 @@
   font-size: 1.2em;
   padding: 10px;
 }
+
+.slider.dark .arrow {
+  background-color: #23272f;
+  color: #f6f7f9;
+}
+
+.slider.light .arrow {
+  background-color: #fff;
+  color: black;
+}
